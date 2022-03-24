@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f8f8;
+}
+
+.data {
+  /* background: url(https://drive.google.com/uc?export=view&id=1xu0Nu4Ve4z3n66wDDZmraUxZPNrllhmL); */
+  height: 100%;
+  background: #f8f8f8;
+  margin-left: 330px;
+  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+nav {
+  background: #ffff;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: none;
+}
+.navbar-inside {
+  display: flex;
+  justify-content: space-between;
+}
+label {
+  font-size: 20px;
+  color: black;
+  font-weight: 200;
+  margin: 0 50px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(55, 34, 246);
+  border-radius: 3px;
+}
+
+nav ul li a:hover {
+  background-color: rgb(49, 27, 214);
+  color: white;
+  transition: 0.5s;
+}
+
+.side-menu {
+  position: fixed;
+  background: #ffffff;
+  width: 330px;
+  padding-left: 50px;
+  height: 100vh;
+}
+.side-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.side-center a {
+  text-decoration: none;
+  color: #000000;
+}
+.side-center h2 {
+  padding-bottom: 20px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.copy-right {
+  padding-top: 20px;
+}
+.copy-right small {
+  color: #8d8d8d;
+}
+.side-menu a {
+  display: block;
+
+  font-size: 10px;
+  transition: 0.5s;
+}
+
+.side-menu span {
+  font-size: 16px;
+  /* margin-left: 10px; */
+  color: #000000;
+}
+
+.side-menu i {
+  font-size: 20px;
+  margin-left: 20px;
+  color: white;
+}
+
+nav .menu-bar {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+.side-menu .Logout {
+  display: none;
+}
+
+/* @media (max-width: 850px) {
+  .side-menu a span {
+    display: none;
+  }
+
+  .side-menu center {
+    display: none;
+  }
+
+  .side-menu {
+    width: 100px;
+  }
+
+  .side-menu a i {
+    display: block;
+    line-height: 80px;
+    text-align: center;
+    margin-left: 0;
+    font-size: 35px;
+  }
+
+  .data {
+    margin-left: 100px;
+  }
+} */
+
+.blob-animation {
+  width: 270px;
+  height: 270px;
+  background: url("/1.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 10px solid rgba(255, 255, 255, 0.685);
+  animation: blobanimate 10s linear infinite;
+}
+
+@keyframes blobanimate {
+  0%,
+  100% {
+    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+  }
+  25% {
+    border-radius: 73% 27% 26% 38%/ 73% 36% 64% 27%;
+  }
+  50% {
+    border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+  }
+  75% {
+    border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+  }
+}
+
+.content-sec {
+  display: flex;
+  width: 90%;
+  top: 50%;
+  transform: translateY(50%);
+  margin: 0 auto;
+  align-items: center;
+}
+.hero-sec2,
+.hero-sec1 {
+  flex: 1;
+}
+.hero-sec2 h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+.hero-sec2 p {
+  color: #8d8d8d;
+}
+
+@media (max-width: 1024px) {
+  .content-sec {
+    flex-direction: column;
+    width: 90%;
+    top: 0;
+    transform: translateY(0);
+    margin: 0 auto;
+    align-items: center;
+  }
+  .data {
+    display: block;
+  }
+  nav {
+    display: block;
+    position: fixed;
+    z-index: 100;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .hero-sec2 {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .data {
+    margin-left: 10px;
+    padding-top: 55px !important;
+    /* width: 100%; */
+  }
+  .side-menu {
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    right: 0;
+    padding-right: 80px;
+
+    /* left: 100%; */
+    background-color: rgb(228, 227, 227);
+    transition: all 0.7s;
+    z-index: 99;
+  }
+
+  .side-menu a i {
+    display: none;
+  }
+  .side-center {
+    border: 1px solid red;
+    text-align: center;
+  }
+
+  .side-menu a span {
+    display: block;
+  }
+
+  .side-menu .Logout {
+    display: block;
+  }
+
+  nav .menu-bar {
+    display: block;
+  }
+  #menu:checked ~ .side-menu {
+    right: -100%;
+  }
+  .side-center h2 {
+    display: none;
+  }
+  .copy-right {
+    display: none;
+  }
+}
+
+@media (max-width: 510px) {
+  .side-menu {
+    width: 35%;
+    padding-left: 50px;
+  }
+  .hero-sec2 h1 {
+    font-size: 30px;
+  }
+}
