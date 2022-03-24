@@ -153,7 +153,7 @@ nav .menu-bar {
 .blob-animation {
   width: 270px;
   height: 270px;
-  background: url("/1.jpg");
+  background: url("1.jpg");
   background-size: cover;
   background-position: center;
   border: 10px solid rgba(255, 255, 255, 0.685);
